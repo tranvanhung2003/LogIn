@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LogInActivity">
+
+    <LinearLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:background="@drawable/blue_bg">
+
+        <TextView
+            android:id="@+id/welcomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Welcome to Steam"
+            android:textSize="30sp"
+            android:textColor="@color/white">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/loginOptionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+        <EditText
+            android:id="@+id/editEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_centerHorizontal="true"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="80dp"
+            android:hint="Username"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingLeft="30dp"
+            />
+
+        <ImageView
+            android:id="@+id/emailAvatar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/email"
+            android:layout_alignLeft="@id/editEmailAddress"
+            android:layout_marginTop="96dp"
+            android:layout_marginLeft="5dp"
+            >
+
+        </ImageView>
+
+        <EditText
+            android:layout_below="@+id/editEmailAddress"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/editPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingLeft="30dp"/>
+
+        <ImageView
+            android:id="@+id/passwordAvatar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/password"
+            android:layout_alignLeft="@id/editEmailAddress"
+            android:layout_marginTop="162dp"
+            android:layout_marginLeft="5dp"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Forgot Password?"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/editPassword"
+            android:layout_alignRight="@id/editPassword">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/createAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Create an account"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/editPassword"
+            android:layout_alignLeft="@id/editPassword">
+        </TextView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginButton"
+            android:layout_width="335dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editPassword"
+            android:background="@drawable/blue_fill__rounded_color"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:text="Log In"
+            android:textColor="@color/white">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/otherOptionLayOut"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:id="@+id/orLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/or"
+                android:text="OR"
+                android:textSize="20sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/otherIMGLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:layout_marginBottom="30dp">
+
+
+            <ImageView
+                android:id="@+id/instaIMG"
+                android:src="@drawable/instagram"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/fbIMG"
+                android:src="@drawable/fb"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/twittIMG"
+                android:src="@drawable/twitter"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp">
+
+            </ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

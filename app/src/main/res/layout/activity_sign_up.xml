@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:id="@+id/WelcomeLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:background="@drawable/blue_bg">
+
+        <ImageView
+            android:id="@+id/welcomeIMG"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/steam"
+            android:layout_marginBottom="30dp">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/SignUpLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <TextView
+            android:id="@+id/signUpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true">
+        </TextView>
+
+        <TextView
+            android:id="@+id/firstnameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:textSize="20sp"
+            android:layout_alignLeft="@+id/fistnameReg"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="4dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/fistnameReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="11"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:hint="Tran Van"
+            android:textSize="20dp">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/lastnameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textSize="20sp"
+            android:layout_alignLeft="@+id/lastnameReg"
+            android:layout_marginTop="157dp"
+            android:layout_marginLeft="4dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/lastnameReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="11"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/fistnameReg"
+            android:layout_marginTop="40dp"
+            android:hint="Hung"
+            android:textSize="20dp">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/usernameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="20sp"
+            android:layout_alignLeft="@+id/lastnameReg"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="4dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/usernameReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="11"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lastnameReg"
+            android:layout_marginTop="40dp"
+            android:hint="21115053120317"
+            android:textSize="20dp">
+
+        </EditText>
+
+
+        <TextView
+            android:id="@+id/passwordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="20sp"
+            android:layout_alignLeft="@+id/lastnameReg"
+            android:layout_below="@id/usernameReg"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="4dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/passwordReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="11"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/usernameReg"
+            android:layout_marginTop="40dp"
+            android:hint="*************"
+            android:textSize="20dp">
+
+        </EditText>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordReg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue_fill__rounded_color"
+            android:text="Create account"
+            android:layout_alignLeft="@id/passwordReg"
+            android:layout_alignRight="@id/passwordReg"
+            android:textColor="@color/white">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </RelativeLayout>
+
+</LinearLayout>
